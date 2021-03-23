@@ -100,13 +100,13 @@ header{
 }
 header .logo__uno .img__uno{
   float: left;
-  width: 110px;
-  height: 110px;
+  width: 145px;
+  height: 85px;
 }
 header .logo__uno .img__dos{
   float: right;
-  width: 195px;
-  height: 110px;
+  width: 145px;
+  height: 85px;
 }
 
 /*======================================*/
