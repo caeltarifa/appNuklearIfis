@@ -34,7 +34,7 @@ body #container img {
   height: 0px;
   top: 50%;
   margin-top: -100px;
-  outline: 2px solid red
+  outline: 3px solid red
 }
 body #container #welcome {
   opacity: 0;
@@ -127,7 +127,7 @@ body #container #content #description span {
   color: #F66120;
 }
 body #container #content #description div {
-  color: #acacac;/*#acacac;*/
+  color: #fff;/*#acacac;*/
   font-size: 7pt;
 }
 body #container #content #description a {
@@ -138,4 +138,38 @@ body #container #content #description a {
 body #container #content #description a:hover {
   line-height: 11px;
   font-weight: 500;
+}
+/* ------------------------------ */
+/* Responsive */
+/* ------------------------------ */
+@media screen and (max-width: 650px){
+  body #container img{
+    top: 28%;
+  }
+  body #container #content{
+    top: 27%;
+  }
+  body #container #welcome #firstSentence {
+    font-size: 15pt;
+  }
+  body #container #welcome #lastSentence{
+    font-size: 10pt;
+  }
+  body #container #welcome{
+    top: 20%;
+  }
+  body #container #welcome #sylado{
+    font-size: 8pt;
+  }
+  body #container #content #contentTitle{
+    font-size: 20pt;
+  }
+  body #container #content #description{
+    font-size: 8pt;
+  }
+}
+@media screen and (max-width: 420px){
+  body #container #content #contentTitle{
+    font-size: 13pt;
+  }
 }

@@ -1,37 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Pagina Principal</title>
-	<link rel="icon" type="image/png" href="img/foto__pagina.png" />
-	<link rel="stylesheet" href="css/estilo.css">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Inicio</title>
+
+  <link rel="stylesheet" href="css/app.css">
+
+  <link rel="stylesheet" href="css/preloader.css">
+
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/navbar.css">
+
+  <link rel="stylesheet" href="css/mundo.css">
+
+  <link rel="stylesheet" href="css/galeria.css">
+
+  <link rel="stylesheet" href="css/contacto.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+  <link rel="stylesheet" href="css/pushbar.css">
 </head>
 <body>
-	<div class="loader__page">
-		<div class="loader">
-			<img src="loader/logo_1.svg" alt="logo_uno" class="inicial__uno">
-			<img src="loader/logo_2.svg" alt="logo_dos" class="inicial__dos">
-			<img src="loader/logo_3.svg" alt="logo_tres" class="inicial__tres loader__parpadeo">
-		</div>
-	</div>
+  <div class="loader__page">
+    <img src="img/preloader/logo_1.svg" alt="logo_uno" class="inicial__uno">
+    <img src="img/preloader/logo_2.svg" alt="logo_dos" class="inicial__dos">
+    <img src="img/preloader/logo_3.svg" alt="logo_tres" class="inicial__tres parpadeo__logo">
+  </div>
 
-	<header>
-		<div class="wrapper">
-			<div class="logo__uno">
-				<img src="img/header/logo__1.png" alt="logo__1" class="img__uno">
-				<img src="img/header/logo__2.png" alt="logo__2" class="img__dos">
-			</div>
-		</div>
-	</header>
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo" data-pushbar-target="pushbar-app"><i class='bx bx-window-alt'></i> Aplicaciones</a>
+      </div>
 
-	<div class="contenido">
-		<iframe src="contenido.html"></iframe>
-	</div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#inicio" class="nav__link active">Inicio</a></li>
+          <li class="nav__item"><a href="#galeria" class="nav__link">Galeria</a></li>
+          <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </div>
 
-	<div class="galeria">
-		<div class="linea">
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <div data-pushbar-id="pushbar-app" data-pushbar-direction="top" class="pushbar pushbar-app">
+    <div class="contenedor">
+      <figure>
+        <a href="#"><img src="img/galeria/logo__1.png"></a>
+        <figcaption><a href="#">Boson</a></figcaption>
+      </figure>
+
+      <figure>
+        <a href="#"><img src="img/galeria/logo__2.png"></a>
+        <figcaption><a href="#">Graviton</a></figcaption>
+      </figure>
+
+      <figure>
+        <a href="#"><img src="img/galeria/logo__3.png"></a>
+        <figcaption><a href="#">Luczon</a></figcaption>
+      </figure>
+
+      <figure>
+        <a href="#"><img src="img/galeria/logo__4.png"></a>
+        <figcaption><a href="#">Upsilon</a></figcaption>
+      </figure>
+    </div>
+
+    <div class="btn-cerrar derecha">
+      <button data-pushbar-close><i class='bx bx-x'></i></button>
+    </div>
+  </div>
+
+  <section class="mundo__fondo" id="inicio">
+    <iframe src="contenido/contenido.html"></iframe>
+  </section>
+
+  <section class="galeria__img" id="galeria">
+    <h1 class="galeria__texto">Galeria</h1>
+    <!-- <span class="linea__div"></span> -->
+    <div class="linea">
 			<div class="contenedor-imagenes">
 
 				<div class="imagen">
@@ -66,67 +119,49 @@
 					</div>
 				</div>
 			</div>
-		</div>	
-	</div>
-
-	<!--<div class="descripcion__galeria">
-		<div class="contenedor__descripcion__galeria">
-			<div class="descripcion__texto">
-				<h1>Boson</h1>
-				<h4>Sistema de informacion en la gestion de recursos humanos.</h4>
-			</div>
-
-			<div class="descripcion__texto">
-				<h1>Graviton</h1>
-				<h4>Sistema distribuido de monitoreo meteorologico aeronautico.</h4>
-			</div>
-
-			<div class="descripcion__texto">
-				<h1>Luczon</h1>
-				<h4>Sistema distribuido de plan de vuelo presentado.</h4>
-			</div>
-
-			<div class="descripcion__texto">
-				<h1>Upsilon</h1>
-				<h4>Sistema distribuido de gestion de informacion aeronautica.</h4>
-			</div>
-		</div>
-	</div>-->
-
-	<footer class="footer__abajo">
-		<div class="footer__arriba">
-			<div class="loader__footer">
-				<img src="img/footer/logo_1.svg" alt="svg_1" class="svg__uno">
-				<img src="img/footer/logo_2.svg" alt="svg_2" class="svg__dos">
-				<img src="img/footer/logo_3.svg" alt="svg_3" class="svg__tres parpadeo__footer">
-			</div>
 		</div>
 
-		<div class="footer__medio">
-			<div class="links">
-				<p class="footer__links">
-					<a href="#">Inicio</a>
-					<a href="#">Boson</a><span class="a"></span>
-					<a href="#">Graviton</a><span class="b"></span>
-          <a href="#">Luczon</a>
-					<a href="#">Nuklear</a>
-					<a href="#">Upsilon</a>
-				</p>
-			</div>
-		</div>
+    <h1 class="galeria__video">Video</h1>
+    <div class="video__galeria">
+      <iframe src="https://www.youtube.com/embed/ZVQeTagj0AI" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+    </div>
+  </section>
 
-		<div class="footer__final">
-			<h3 class="primera">Ifis <span>Nuclear</span></h3>
-			<p class="empresa">Sistema de Información de Vuelo por Internet.</p>
-			<span class="footer__nombre">&copy; Inc</span>
-			<p class="footer__empresa">2021 | IFIS NUKLEAR</p>
-		</div>
-	</footer>
+  <section class="contacto" id="contacto">
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="img/footer/logo_1.svg" alt="footer__uno" class="footer__uno">
+        <img src="img/footer/logo_2.svg" alt="footer__dos" class="footer__dos">
+        <img src="img/footer/logo_3.svg" alt="footer__tres" class="footer__tres parpadeo__footer">
+      </div>
 
-	<script>
-  	$(window).on('load', function () {
-  		$(".loader__page").css({visibility:"hidden",opacity:"0"});    
-		});
+      <h3 class="primera">Ifis <span>Nuclear</span></h3>
+      <p class="empresa">Sistema de Información de Vuelo por Internet.</p>
+
+      <p class="redes-sociales">
+        <a href="#" class="facebook"><i class='bx bxl-facebook-square'></i></a>
+        <a href="#" class="twitter"><i class='bx bxl-twitter'></i></a>
+        <a href="#" class="instagram"><i class='bx bxl-instagram' ></i></a>
+      </p>
+
+      <span class="footer__nombre">&copy; Inc</span>
+      <p class="footer__empresa">2021 | IFIS NUKLEAR</p>
+    </footer>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/preloader.js"></script>
+
+  <script src="js/navbar.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+  <script>
+    var pushbar = new Pushbar({
+      blur: true,
+      overlay:true
+    });
   </script>
 </body>
 </html>

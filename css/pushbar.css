@@ -1,0 +1,54 @@
+/* ------------------------------ */
+/* Estilos Generales */
+/* ------------------------------ */
+.pushbar{
+  z-index: 2100; 
+  background: #000;
+  color: #fff;
+  padding: 20px;
+}
+.pushbar .btn-cerrar.derecha{
+  text-align: right;
+}
+.pushbar .btn-cerrar.izquierda{
+  text-align: left;
+}
+.pushbar .btn-cerrar button{
+  background: none;
+  color: #808080;
+  border: none;
+  cursor: pointer;
+  font-size: 70px;
+}
+/* ------------------------------ */
+/* Modal de Apps */
+/* ------------------------------ */
+.pushbar-app .contenedor{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 0;
+  width: 100%;
+}
+.pushbar-app figcaption{
+  margin-top: 10px;
+  font-size: 18px;
+}
+.pushbar-app a{
+  color: #fff;
+  max-width: 10px;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+}
+.pushbar-app a img{
+  width: 100%;
+}
+@media screen and (max-width: 600px){
+  .pushbar-app figcaption{
+    font-size: 12px;
+  }
+  .pushbar .btn-cerrar button{
+    font-size: 40px;
+  }
+}

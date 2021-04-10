@@ -3,6 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+<circle fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" cx="75" cy="75.495" r="27.323"/>
 <circle fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" cx="75.131" cy="75.494" r="51"/>
 <g>
 	<path fill="#20AAC3" stroke="#FFFFFF" stroke-miterlimit="10" d="M15.632,68.356c0,0.659-0.361,1.195-0.807,1.195h-1.32
@@ -41,5 +42,4 @@
 		</g>
 	</g>
 </g>
-<circle fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="75.131" cy="75.496" r="30.467"/>
 </svg>

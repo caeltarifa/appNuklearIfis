@@ -133,7 +133,7 @@ function init() {
     earthPivot3.add(mesh);
     
     ///// Avion Verde /////
-    const texture = new THREE.TextureLoader().load('img/aviones/avion_1.png');
+    const texture = new THREE.TextureLoader().load('../img/aviones/avion_1.png');
     const material = new THREE.MeshBasicMaterial({map:texture,color:0x74b9ff});
 
     earthPivot = new THREE.Object3D();
@@ -144,7 +144,7 @@ function init() {
     objects.push(earth);
 
     ///// Avion Rosado /////
-    const texture2 = new THREE.TextureLoader().load('img/aviones/avion_2.png');
+    const texture2 = new THREE.TextureLoader().load('../img/aviones/avion_2.png');
     const material2 = new THREE.MeshBasicMaterial({map:texture2,color:0xDB68B1});
     
     earthPivot2 = new THREE.Object3D();
@@ -155,7 +155,7 @@ function init() {
     objects.push(earth2);
 
     ///// Avion Celeste 4 turbinas /////
-    const texture4 = new THREE.TextureLoader().load('img/aviones/avion_3.png');
+    const texture4 = new THREE.TextureLoader().load('../img/aviones/avion_3.png');
     const material4 = new THREE.MeshBasicMaterial({map:texture4,color:0x55efc4});
 
     earthPivot4 = new THREE.Object3D();
@@ -166,7 +166,7 @@ function init() {
     objects.push(earth3);
 
     ///// Avion Verde /////
-    const texture6 = new THREE.TextureLoader().load('img/aviones/avion_4.png');
+    const texture6 = new THREE.TextureLoader().load('../img/aviones/avion_4.png');
     const material6 = new THREE.MeshBasicMaterial({map:texture6,color:0xA3D750});
     
     earthPivot6 = new THREE.Object3D();
@@ -177,7 +177,7 @@ function init() {
     objects.push(earth6);
 
     ///// Avion Celeste 2 turbinas /////
-    const texture7 = new THREE.TextureLoader().load('img/aviones/avion_5.png');
+    const texture7 = new THREE.TextureLoader().load('../img/aviones/avion_5.png');
     const material7 = new THREE.MeshBasicMaterial({map:texture7,color:0xa29bfe});
     
     earthPivot7 = new THREE.Object3D();
@@ -257,7 +257,7 @@ function onMouseDown(event) {
                         
                         info.innerHTML = "Bienvenido a mi <span>MUNDO.</span>";
                  
-                        description.innerHTML = "Estas listo para <span id='mundo1'>EMPEZAR</span> a navegar.<br/><br/><div>Haga clic en los otros <span id='mundo2'>AVIONES</span> para obtener más información...<div>";
+                        description.innerHTML = "Estas listo para <span id='mundo1'>EMPEZAR</span> a navegar.<br/><br/><div>Haga clic en los otros <span id='mundo2'>AVIONES</span><br> para obtener más información...<div>";
                         document.getElementById('mundo1').style.color="#27ae60";
                         document.getElementById('mundo2').style.color="#2980b9";
                     }
@@ -285,7 +285,7 @@ function onMouseDown(event) {
 
                         info.innerHTML = "Bienvenido a mi <span>MUNDO.</span>";
                  
-                        description.innerHTML = "Estas listo para <span id='mundo1'>EMPEZAR</span> a navegar.<br/><br/><div>Haga clic en los otros <span id='mundo2'>AVIONES</span> para obtener más información...<div>";
+                        description.innerHTML = "Estas listo para <span id='mundo1'>EMPEZAR</span> a navegar.<br/><br/><div>Haga clic en los otros <span id='mundo2'>AVIONES</span><br> para obtener más información...<div>";
                         document.getElementById('mundo1').style.color="#27ae60";
                         document.getElementById('mundo2').style.color="#2980b9";
                     }
@@ -315,7 +315,7 @@ function onMouseDown(event) {
                         
                         info.innerHTML = "Avion <span id='couleur'>BOSON.</span>";
                  
-                        description.innerHTML = "Vuela por <span id='fucsia'>BOZON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='fucsia2'>AVIONES</span> para obtener más información...<div>";
+                        description.innerHTML = "Vuela por <span id='fucsia'>BOZON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='fucsia2'>AVIONES</span><br> para obtener más información...<div>";
                         document.getElementById('couleur').style.color="#74b9ff";
                         document.getElementById('fucsia').style.color="#74b9ff";
                         document.getElementById('fucsia2').style.color="#74b9ff";
@@ -325,7 +325,7 @@ function onMouseDown(event) {
                         planetViewed = 3;
                         info.innerHTML = "Avion <span id='couleur'>BOSON.</span>";
                  
-                        description.innerHTML = "Vuela por <span id='fucsia'>BOSON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='fucsia2'>AVIONES</span> para obtener más información...<div>";
+                        description.innerHTML = "Vuela por <span id='fucsia'>BOSON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='fucsia2'>AVIONES</span><br> para obtener más información...<div>";
                         document.getElementById('couleur').style.color="#74b9ff";
                         document.getElementById('fucsia').style.color="#74b9ff";
                         document.getElementById('fucsia2').style.color="#74b9ff";
@@ -374,7 +374,7 @@ function onMouseDown(event) {
                         
                         info.innerHTML = "Avion <span id='couleur'>GRAVITON.</span>";
                  
-                        description.innerHTML = "Vuela por <span id='celeste'>GRAVITON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='celeste2'>AVIONES</span> para obtener más información...<div>";
+                        description.innerHTML = "Vuela por <span id='celeste'>GRAVITON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='celeste2'>AVIONES</span><br> para obtener más información...<div>";
                         document.getElementById('couleur').style.color="#DB68B1";
                         document.getElementById('celeste').style.color="#DB68B1";
                         document.getElementById('celeste2').style.color="#DB68B1";
@@ -383,7 +383,7 @@ function onMouseDown(event) {
                         planetViewed = 2;
                         info.innerHTML = "Avion <span id='couleur'>GRAVITON.</span>";
                  
-                        description.innerHTML = "Vuela por <span id='celeste'>GRAVITON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='celeste2'>AVIONES</span> para obtener más información...<div>";
+                        description.innerHTML = "Vuela por <span id='celeste'>GRAVITON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='celeste2'>AVIONES</span><br> para obtener más información...<div>";
                         document.getElementById('couleur').style.color="#DB68B1";
                         document.getElementById('celeste').style.color="#DB68B1";
                         document.getElementById('celeste2').style.color="#DB68B1";
@@ -432,7 +432,7 @@ function onMouseDown(event) {
                         
                         info.innerHTML = "Avion <span id='couleur'>LUCZON.</span>";
                  
-                        description.innerHTML = "Vuela por <span id='verde'>LUCZON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='verde2'>AVIONES</span> para obtener más información...<div>";
+                        description.innerHTML = "Vuela por <span id='verde'>LUCZON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='verde2'>AVIONES</span><br> para obtener más información...<div>";
                         document.getElementById('couleur').style.color="#55efc4";
                         document.getElementById('verde').style.color="#55efc4";
                         document.getElementById('verde2').style.color="#55efc4";
@@ -441,7 +441,7 @@ function onMouseDown(event) {
                         planetViewed = 4;
                         info.innerHTML = "Avion <span id='couleur'>LUCZON.</span>";
                  
-                        description.innerHTML = "Vuela por <span id='verde'>LUCZON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='verde2'>AVIONES</span> para obtener más información...<div>";
+                        description.innerHTML = "Vuela por <span id='verde'>LUCZON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='verde2'>AVIONES</span><br> para obtener más información...<div>";
                         document.getElementById('couleur').style.color="#55efc4";
                         document.getElementById('verde').style.color="#55efc4";
                         document.getElementById('verde2').style.color="#55efc4";
@@ -490,7 +490,7 @@ function onMouseDown(event) {
                         
                         info.innerHTML = "Avion <span id='couleur'>NUKLEAR.</span>";
                  
-                        description.innerHTML = "Vuela por <span id='verde'>NUKLEAR</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='verde2'>AVIONES</span> para obtener más información...<div>";
+                        description.innerHTML = "Vuela por <span id='verde'>NUKLEAR</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='verde2'>AVIONES</span><br> para obtener más información...<div>";
                         document.getElementById('couleur').style.color="#A3D750";
                         document.getElementById('verde').style.color="#A3D750";
                         document.getElementById('verde2').style.color="#A3D750";
@@ -499,7 +499,7 @@ function onMouseDown(event) {
                         planetViewed = 5;
                         info.innerHTML = "Avion <span id='couleur'>NUKLEAR.</span>";
                  
-                        description.innerHTML = "Vuela por <span id='verde'>NUKLEAR</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='verde2'>AVIONES</span> para obtener más información...<div>";
+                        description.innerHTML = "Vuela por <span id='verde'>NUKLEAR</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='verde2'>AVIONES</span><br> para obtener más información...<div>";
                         document.getElementById('couleur').style.color="#A3D750";
                         document.getElementById('verde').style.color="#A3D750";
                         document.getElementById('verde2').style.color="#A3D750";
@@ -548,7 +548,7 @@ function onMouseDown(event) {
                         
                         info.innerHTML = "Avion <span id='couleur'>UPSILON.</span>";
                  
-                        description.innerHTML = "Vuela por <span id='verde'>UPSILON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='verde2'>AVIONES</span> para obtener más información...<div>";
+                        description.innerHTML = "Vuela por <span id='verde'>UPSILON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='verde2'>AVIONES</span><br> para obtener más información...<div>";
                         document.getElementById('couleur').style.color="#a29bfe";
                         document.getElementById('verde').style.color="#a29bfe";
                         document.getElementById('verde2').style.color="#a29bfe";
@@ -557,7 +557,7 @@ function onMouseDown(event) {
                         planetViewed = 6;
                         info.innerHTML = "Avion <span id='couleur'>UPSILON.</span>";
                  
-                        description.innerHTML = "Vuela por <span id='verde'>UPSILON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='verde2'>AVIONES</span> para obtener más información...<div>";
+                        description.innerHTML = "Vuela por <span id='verde'>UPSILON</span> por 20 años.<br/><br/><div>Haga clic en los otros <span id='verde2'>AVIONES</span><br> para obtener más información...<div>";
                         document.getElementById('couleur').style.color="#a29bfe";
                         document.getElementById('verde').style.color="#a29bfe";
                         document.getElementById('verde2').style.color="#a29bfe";
