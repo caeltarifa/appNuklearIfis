@@ -6,6 +6,7 @@
   background: #000;
   color: #fff;
   padding: 20px;
+  width: 320px !important;
 }
 .pushbar .btn-cerrar.derecha{
   text-align: right;
@@ -18,31 +19,52 @@
   color: #808080;
   border: none;
   cursor: pointer;
-  font-size: 70px;
+  font-size: 25px;
+}
+.pushbar a{
+  text-decoration: none;
+  color: #fff;
 }
 /* ------------------------------ */
 /* Modal de Apps */
 /* ------------------------------ */
-.pushbar-app .contenedor{
+.pushbar .pushbar-app{
+  background: #000;
+  width: 365px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.pushbar-app .titulo{
+  font-size: 15pt;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(112,112,112,.60);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.pushbar-app .item{
   display: flex;
   justify-content: space-between;
-  text-align: center;
-  padding-bottom: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(112,112,112,.60);
+}
+.pushbar-app .item{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(112,112,112,.60);
+}
+.pushbar-app .item img{
   width: 100%;
+  max-width: 100px;
 }
-.pushbar-app figcaption{
-  margin-top: 10px;
-  font-size: 18px;
+.pushbar-app .textos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
-.pushbar-app a{
-  color: #fff;
-  max-width: 10px;
-  text-decoration: none;
-  width: 100px;
-  height: 100px;
-}
-.pushbar-app a img{
-  width: 100%;
+.pushbar-app .textos .nombre-item{
+  color: #aaaaaa;
 }
 @media screen and (max-width: 600px){
   .pushbar-app figcaption{
@@ -50,5 +72,10 @@
   }
   .pushbar .btn-cerrar button{
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 400px){
+  .pushbar{
+    width: 100% !important;
   }
 }

@@ -34,7 +34,7 @@ body #container img {
   height: 0px;
   top: 50%;
   margin-top: -100px;
-  outline: 3px solid red
+  outline: 3px solid #4834d4;
 }
 body #container #welcome {
   opacity: 0;

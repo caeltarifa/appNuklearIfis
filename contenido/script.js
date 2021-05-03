@@ -133,7 +133,7 @@ function init() {
     earthPivot3.add(mesh);
     
     ///// Avion Verde /////
-    const texture = new THREE.TextureLoader().load('../img/aviones/avion_1.png');
+    const texture = new THREE.TextureLoader().load('../img/aviones/1.png');
     const material = new THREE.MeshBasicMaterial({map:texture,color:0x74b9ff});
 
     earthPivot = new THREE.Object3D();
@@ -144,7 +144,7 @@ function init() {
     objects.push(earth);
 
     ///// Avion Rosado /////
-    const texture2 = new THREE.TextureLoader().load('../img/aviones/avion_2.png');
+    const texture2 = new THREE.TextureLoader().load('../img/aviones/2.png');
     const material2 = new THREE.MeshBasicMaterial({map:texture2,color:0xDB68B1});
     
     earthPivot2 = new THREE.Object3D();
@@ -155,7 +155,7 @@ function init() {
     objects.push(earth2);
 
     ///// Avion Celeste 4 turbinas /////
-    const texture4 = new THREE.TextureLoader().load('../img/aviones/avion_3.png');
+    const texture4 = new THREE.TextureLoader().load('../img/aviones/3.png');
     const material4 = new THREE.MeshBasicMaterial({map:texture4,color:0x55efc4});
 
     earthPivot4 = new THREE.Object3D();
@@ -166,7 +166,7 @@ function init() {
     objects.push(earth3);
 
     ///// Avion Verde /////
-    const texture6 = new THREE.TextureLoader().load('../img/aviones/avion_4.png');
+    const texture6 = new THREE.TextureLoader().load('../img/aviones/4.png');
     const material6 = new THREE.MeshBasicMaterial({map:texture6,color:0xA3D750});
     
     earthPivot6 = new THREE.Object3D();
@@ -177,7 +177,7 @@ function init() {
     objects.push(earth6);
 
     ///// Avion Celeste 2 turbinas /////
-    const texture7 = new THREE.TextureLoader().load('../img/aviones/avion_5.png');
+    const texture7 = new THREE.TextureLoader().load('../img/aviones/5.png');
     const material7 = new THREE.MeshBasicMaterial({map:texture7,color:0xa29bfe});
     
     earthPivot7 = new THREE.Object3D();

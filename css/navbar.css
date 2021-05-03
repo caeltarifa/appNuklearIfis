@@ -22,7 +22,7 @@ header .bd-grid{
   border-bottom: 1px solid #fff;
   top: 0;
   left: 0;
-  z-index: 2000;
+  z-index: 100;
   background: transparent;
 }
 header .nav{
@@ -39,7 +39,7 @@ header .nav{
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(0,0,0);
     transition: .5s;
     backdrop-filter: blur(10px);
   }
@@ -49,10 +49,11 @@ header .nav__item{
 }
 header .nav__link{
   position: relative;
-  color: #2a3b47;
+  color: #fff;
 }
 header .nav__link:hover{
-  color: #5361ff;
+  color: #aaaaaa;
+  text-decoration: none;
 }
 header .nav__logo{
   color: #fafaff;
@@ -72,7 +73,7 @@ header .active::after{
   height: .18rem;
   left: 0;
   top: 1.5rem;
-  background-color: #5361FF;
+  background-color: rgba(72, 84, 96);
 }
 @media screen and (min-width: 768px){
   body{
@@ -96,14 +97,24 @@ header .active::after{
   }
   header .nav__link:hover{
     color: #fafaff;
+    text-decoration: none;
   }
   header .active::after{
     background-color: #fafaff;
+  }
+  .l-header .nav__logo:hover{
+    color: #fafaff;
+    text-decoration: none;
   }
 }
 @media screen and (min-width: 1024px){
   header .bd-grid{
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (max-width: 400px){
+  header .nav__menu{
+    width: 100%;
   }
 }

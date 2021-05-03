@@ -13,14 +13,15 @@
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/navbar.css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+  <link rel="stylesheet" href="css/pushbar.css">
+
   <link rel="stylesheet" href="css/mundo.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
   <link rel="stylesheet" href="css/galeria.css">
 
   <link rel="stylesheet" href="css/contacto.css">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
-  <link rel="stylesheet" href="css/pushbar.css">
 </head>
 <body>
   <div class="loader__page">
@@ -49,31 +50,53 @@
     </nav>
   </header>
 
-  <div data-pushbar-id="pushbar-app" data-pushbar-direction="top" class="pushbar pushbar-app">
+  <div data-pushbar-id="pushbar-app" data-pushbar-direction="left" class="pushbar pushbar-app">
     <div class="contenedor">
-      <figure>
-        <a href="#"><img src="img/galeria/logo__1.png"></a>
-        <figcaption><a href="#">Boson</a></figcaption>
-      </figure>
+      <div class="btn-cerrar izquierda">
+        <button data-pushbar-close><i class='bx bx-x'></i></button>
+      </div>
 
-      <figure>
-        <a href="#"><img src="img/galeria/logo__2.png"></a>
-        <figcaption><a href="#">Graviton</a></figcaption>
-      </figure>
+      <p class="titulo">Las Aplicaciones</p>
 
-      <figure>
-        <a href="#"><img src="img/galeria/logo__3.png"></a>
-        <figcaption><a href="#">Luczon</a></figcaption>
-      </figure>
+      <a href="#">
+        <div class="item">
+          <img src="img/galeria/2.png">
+          <div class="textos">
+            <p class="nombre-item">App Boson</p>
+            <p>Recursos Humanos</p>
+          </div>
+        </div>
+      </a>
 
-      <figure>
-        <a href="#"><img src="img/galeria/logo__4.png"></a>
-        <figcaption><a href="#">Upsilon</a></figcaption>
-      </figure>
-    </div>
+      <a href="#">
+        <div class="item">
+          <img src="img/galeria/1.png">
+          <div class="textos">
+            <p class="nombre-item">App Graviton</p>
+            <p>Metereologia</p>
+          </div>
+        </div>
+      </a>
 
-    <div class="btn-cerrar derecha">
-      <button data-pushbar-close><i class='bx bx-x'></i></button>
+      <a href="#">
+        <div class="item">
+          <img src="img/galeria/3.png">
+          <div class="textos">
+            <p class="nombre-item">App Luczon</p>
+            <p>Plan de Vuelo</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="item">
+          <img src="img/galeria/4.png">
+          <div class="textos">
+            <p class="nombre-item">App Upsilon</p>
+            <p>Información</p>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 
@@ -82,52 +105,101 @@
   </section>
 
   <section class="galeria__img" id="galeria">
-    <h1 class="galeria__texto">Galeria</h1>
     <!-- <span class="linea__div"></span> -->
+    <!-- <h1 class="galeria__texto">Galeria</h1> -->
     <div class="linea">
 			<div class="contenedor-imagenes">
 
 				<div class="imagen">
-					<img src="img/galeria/logo__1.png" alt="imagen_2">
-					<div class="overlay">
-						<h2>App Boson</h2>
-						<p>Sistema de informacion en la gestion de recursos humanos.</p>
-					</div>
+          <a href="#image1">
+            <img src="img/galeria/2.png" alt="imagen_2">
+            <div class="overlay">
+              <h2>App Boson</h2>
+              <p>Sistema de informacion en la gestion de recursos humanos.</p>
+            </div>
+          </a>
 				</div>
 
 				<div class="imagen">
-					<img src="img/galeria/logo__2.png" alt="imagen_3">
-					<div class="overlay">
-						<h2>App Graviton</h2>
-						<p>Sistema distribuido de monitoreo meteorologico aeronautico.</p>
-					</div>
+					<a href="#image2">
+            <img src="img/galeria/1.png" alt="imagen_3">
+            <div class="overlay">
+              <h2>App Graviton</h2>
+              <p>Sistema distribuido de monitoreo meteorologico aeronautico.</p>
+            </div>
+          </a>
 				</div>
 
 				<div class="imagen">
-					<img src="img/galeria/logo__3.png" alt="imagen_4">
-					<div class="overlay">
-						<h2>App Luczon</h2>
-						<p>Sistema distribuido de plan de vuelo presentado.</p>
-					</div>
+					<a href="#image3">
+            <img src="img/galeria/3.png" alt="imagen_4">
+            <div class="overlay">
+              <h2>App Luczon</h2>
+              <p>Sistema distribuido de plan de vuelo presentado.</p>
+            </div>
+          </a>
 				</div>
 
 				<div class="imagen">
-					<img src="img/galeria/logo__4.png" alt="imagen_5">
-					<div class="overlay">
-						<h2>App Upsilon</h2>
-						<p>Sistema distribuido de gestion de informacion aeronautica.</p>
-					</div>
+					<a href="#image4">
+            <img src="img/galeria/4.png" alt="imagen_5">
+            <div class="overlay">
+              <h2>App Upsilon</h2>
+              <p>Sistema distribuido de gestion de informacion aeronautica.</p>
+            </div>
+          </a>
 				</div>
 			</div>
 		</div>
 
-    <h1 class="galeria__video">Video</h1>
-    <div class="video__galeria">
-      <iframe src="https://www.youtube.com/embed/ZVQeTagj0AI" frameborder="0"
+    <div class="contenido__galeria">
+      <div class="video__galeria">
+        <iframe src="https://www.youtube.com/embed/ZVQeTagj0AI" frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowfullscreen></iframe>
+      </div>
     </div>
   </section>
+
+  <article class="light-box" id="image1">
+    <a href="#image4" class="regresar"><i class='bx bxs-chevron-left'></i></a>
+    <div class="cont-light-box">
+      <img src="img/galeria/2.png" class="light-img">
+    </div>
+    <a href="#image2" class="siguiente"><i class='bx bxs-chevron-right'></i></a>
+    <a href="#galeria" class="close"><i class='bx bx-x'></i></a>
+    <h1 class="slider__info"><i class='bx bxs-plane-alt'></i>Boson</h1>
+  </article>
+
+  <article class="light-box" id="image2">
+    <a href="#image1" class="regresar"><i class='bx bxs-chevron-left'></i></a>
+    <div class="cont-light-box">
+      <img src="img/galeria/1.png" class="light-img">
+    </div>
+    <a href="#image3" class="siguiente"><i class='bx bxs-chevron-right'></i></a>
+    <a href="#galeria" class="close"><i class='bx bx-x'></i></a>
+    <h1 class="slider__info"><i class='bx bxs-plane-alt'></i>Graviton</h1>
+  </article>
+
+  <article class="light-box" id="image3">
+    <a href="#image2" class="regresar"><i class='bx bxs-chevron-left'></i></a>
+    <div class="cont-light-box">
+      <img src="img/galeria/3.png" class="light-img">
+    </div>
+    <a href="#image4" class="siguiente"><i class='bx bxs-chevron-right'></i></a>
+    <a href="#galeria" class="close"><i class='bx bx-x'></i></a>
+    <h1 class="slider__info"><i class='bx bxs-plane-alt'></i>Luczon</h1>
+  </article>
+
+  <article class="light-box" id="image4">
+    <a href="#image3" class="regresar"><i class='bx bxs-chevron-left'></i></a>
+    <div class="cont-light-box">
+      <img src="img/galeria/4.png" class="light-img">
+    </div>
+    <a href="#image1" class="siguiente"><i class='bx bxs-chevron-right'></i></a>
+    <a href="#galeria" class="close"><i class='bx bx-x'></i></a>
+    <h1 class="slider__info"><i class='bx bxs-plane-alt'></i>Upsilon</h1>
+  </article>
 
   <section class="contacto" id="contacto">
     <footer class="footer">
@@ -157,11 +229,6 @@
   <script src="js/navbar.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
-  <script>
-    var pushbar = new Pushbar({
-      blur: true,
-      overlay:true
-    });
-  </script>
+  <script src="js/pushbar.js"></script>
 </body>
 </html>
