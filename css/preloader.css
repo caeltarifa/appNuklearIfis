@@ -69,7 +69,7 @@
 .loader__page{
   position: fixed;
   z-index: 25000;
-  background: #30336b;
+  background: #fff;
   left: 0px;
   top: 0px;
   height: 100%;

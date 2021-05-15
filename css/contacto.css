@@ -99,6 +99,7 @@
   font-weight: normal;
   margin-bottom: 0;
   letter-spacing: 5px;
+  text-transform: uppercase;
 }
 .footer .redes-sociales{
   display: flex;
@@ -158,6 +159,11 @@
   margin-top: 10px;
   letter-spacing: 7px;
 }
+.footer .footer__logo__epb{
+  width: 270px;
+  height: 120px;
+  margin: 20px 0;
+}
 /* ------------------------------ */
 /* Responsive */
 /* ------------------------------ */
@@ -178,5 +184,8 @@
   .footer .redes-sociales a{
     width: 40px;
     height: 40px;
+  }
+  .footer .footer__empresa{
+    font-size: 15px;
   }
 }

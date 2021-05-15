@@ -6,57 +6,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pagina Inicio</title>
 
+  <!-- ----- -----  Estilos Generales  ----- ----- -->
   <link rel="stylesheet" href="css/app.css">
 
+  <!-- ----- -----  Estilo Preloader  ----- ----- -->
   <link rel="stylesheet" href="css/preloader.css">
 
+  <!-- ----- -----  Estilo Iconos Boxicons  ----- ----- -->
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- ----- -----  Estilo NavBar  ----- ----- -->
   <link rel="stylesheet" href="css/navbar.css">
 
+  <!-- ----- -----  Estilo Pushbar  ----- ----- -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+
+  <!-- ----- -----  Estilo Menu sidebar  ----- ----- -->
   <link rel="stylesheet" href="css/pushbar.css">
 
+  <!-- ----- -----  Estilo Mundo  ----- ----- -->
   <link rel="stylesheet" href="css/mundo.css">
 
+  <!-- ----- -----  Estilo Lightbox  ----- ----- -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  
+  <!-- ----- -----  Estilo Galeria de Imagenes  ----- ----- -->
   <link rel="stylesheet" href="css/galeria.css">
 
+  <!-- ----- -----  Estilo Contacto  ----- ----- -->
   <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
+
+  <!-- ----- -----  Contenido Preloader  ----- ----- -->
   <div class="loader__page">
     <img src="img/preloader/logo_1.svg" alt="logo_uno" class="inicial__uno">
     <img src="img/preloader/logo_2.svg" alt="logo_dos" class="inicial__dos">
     <img src="img/preloader/logo_3.svg" alt="logo_tres" class="inicial__tres parpadeo__logo">
   </div>
 
+  <!-- ----- -----  Contenido NavBar  ----- ----- -->
   <header class="l-header">
-    <nav class="nav bd-grid">
-      <div>
-        <a href="#" class="nav__logo" data-pushbar-target="pushbar-app"><i class='bx bx-window-alt'></i> Aplicaciones</a>
-      </div>
+    <div class="optionsBar">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo" data-pushbar-target="pushbar-app"><i class='bx bxs-grid'></i></a>
+        </div>
+  
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#inicio" class="nav__link active">Inicio</a></li>
+            <li class="nav__item"><a href="#galeria" class="nav__link">Galeria</a></li>
+            <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+          </ul>
+        </div>
+  
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
 
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#inicio" class="nav__link active">Inicio</a></li>
-          <li class="nav__item"><a href="#galeria" class="nav__link">Galeria</a></li>
-          <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
-        </ul>
-      </div>
-
-      <div class="nav__toggle" id="nav-toggle">
-        <i class="bx bx-menu"></i>
-      </div>
-    </nav>
+      <img src="img/navbar/LOGO_AASANA.png" class="logo__aasana">
+    </div>
   </header>
 
+  <!-- ----- -----  Contenido Menu Sidebar  ----- ----- -->
   <div data-pushbar-id="pushbar-app" data-pushbar-direction="left" class="pushbar pushbar-app">
     <div class="contenedor">
       <div class="btn-cerrar izquierda">
         <button data-pushbar-close><i class='bx bx-x'></i></button>
       </div>
 
-      <p class="titulo">Las Aplicaciones</p>
+      <p class="titulo">Ifis Nuklear</p>
 
       <a href="#">
         <div class="item">
@@ -64,6 +85,16 @@
           <div class="textos">
             <p class="nombre-item">App Boson</p>
             <p>Recursos Humanos</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="item">
+          <img src="img/galeria/5.png">
+          <div class="textos">
+            <p class="nombre-item">App Ezpin</p>
+            <p>Mensajeria Aeronautica</p>
           </div>
         </div>
       </a>
@@ -100,19 +131,20 @@
     </div>
   </div>
 
+  <!-- ----- -----  Contenido Principal Aviones  ----- ----- -->
   <section class="mundo__fondo" id="inicio">
     <iframe src="contenido/contenido.html"></iframe>
   </section>
 
+  <!-- ----- -----  Contenido Galeria de Imagenes  ----- ----- -->
   <section class="galeria__img" id="galeria">
     <!-- <span class="linea__div"></span> -->
     <!-- <h1 class="galeria__texto">Galeria</h1> -->
     <div class="linea">
 			<div class="contenedor-imagenes">
-
 				<div class="imagen">
           <a href="#image1">
-            <img src="img/galeria/2.png" alt="imagen_2">
+            <img src="img/galeria/2.png" alt="imagen_1">
             <div class="overlay">
               <h2>App Boson</h2>
               <p>Sistema de informacion en la gestion de recursos humanos.</p>
@@ -120,8 +152,18 @@
           </a>
 				</div>
 
-				<div class="imagen">
+        <div class="imagen">
 					<a href="#image2">
+            <img src="img/galeria/5.png" alt="imagen_2">
+            <div class="overlay">
+              <h2>App Ezpin</h2>
+              <p>Sistema de Mensajeria Aeronautica.</p>
+            </div>
+          </a>
+				</div>
+
+				<div class="imagen">
+					<a href="#image3">
             <img src="img/galeria/1.png" alt="imagen_3">
             <div class="overlay">
               <h2>App Graviton</h2>
@@ -131,7 +173,7 @@
 				</div>
 
 				<div class="imagen">
-					<a href="#image3">
+					<a href="#image4">
             <img src="img/galeria/3.png" alt="imagen_4">
             <div class="overlay">
               <h2>App Luczon</h2>
@@ -141,7 +183,7 @@
 				</div>
 
 				<div class="imagen">
-					<a href="#image4">
+					<a href="#image5">
             <img src="img/galeria/4.png" alt="imagen_5">
             <div class="overlay">
               <h2>App Upsilon</h2>
@@ -161,8 +203,9 @@
     </div>
   </section>
 
+  <!-- ----- -----  Contenido de la Galeria su Slider  ----- ----- -->
   <article class="light-box" id="image1">
-    <a href="#image4" class="regresar"><i class='bx bxs-chevron-left'></i></a>
+    <a href="#image5" class="regresar"><i class='bx bxs-chevron-left'></i></a>
     <div class="cont-light-box">
       <img src="img/galeria/2.png" class="light-img">
     </div>
@@ -174,25 +217,35 @@
   <article class="light-box" id="image2">
     <a href="#image1" class="regresar"><i class='bx bxs-chevron-left'></i></a>
     <div class="cont-light-box">
-      <img src="img/galeria/1.png" class="light-img">
+      <img src="img/galeria/5.png" class="light-img">
     </div>
     <a href="#image3" class="siguiente"><i class='bx bxs-chevron-right'></i></a>
     <a href="#galeria" class="close"><i class='bx bx-x'></i></a>
-    <h1 class="slider__info"><i class='bx bxs-plane-alt'></i>Graviton</h1>
+    <h1 class="slider__info"><i class='bx bxs-plane-alt'></i>Ezpin</h1>
   </article>
 
   <article class="light-box" id="image3">
     <a href="#image2" class="regresar"><i class='bx bxs-chevron-left'></i></a>
     <div class="cont-light-box">
-      <img src="img/galeria/3.png" class="light-img">
+      <img src="img/galeria/1.png" class="light-img">
     </div>
     <a href="#image4" class="siguiente"><i class='bx bxs-chevron-right'></i></a>
     <a href="#galeria" class="close"><i class='bx bx-x'></i></a>
-    <h1 class="slider__info"><i class='bx bxs-plane-alt'></i>Luczon</h1>
+    <h1 class="slider__info"><i class='bx bxs-plane-alt'></i>Graviton</h1>
   </article>
 
   <article class="light-box" id="image4">
     <a href="#image3" class="regresar"><i class='bx bxs-chevron-left'></i></a>
+    <div class="cont-light-box">
+      <img src="img/galeria/3.png" class="light-img">
+    </div>
+    <a href="#image5" class="siguiente"><i class='bx bxs-chevron-right'></i></a>
+    <a href="#galeria" class="close"><i class='bx bx-x'></i></a>
+    <h1 class="slider__info"><i class='bx bxs-plane-alt'></i>Luczon</h1>
+  </article>
+
+  <article class="light-box" id="image5">
+    <a href="#image4" class="regresar"><i class='bx bxs-chevron-left'></i></a>
     <div class="cont-light-box">
       <img src="img/galeria/4.png" class="light-img">
     </div>
@@ -201,6 +254,7 @@
     <h1 class="slider__info"><i class='bx bxs-plane-alt'></i>Upsilon</h1>
   </article>
 
+  <!-- ----- -----  Contenido Contacto  ----- ----- -->
   <section class="contacto" id="contacto">
     <footer class="footer">
       <div class="footer__logo">
@@ -209,16 +263,17 @@
         <img src="img/footer/logo_3.svg" alt="footer__tres" class="footer__tres parpadeo__footer">
       </div>
 
-      <h3 class="primera">Ifis <span>Nuclear</span></h3>
+      <h3 class="primera">IFIS <span>NUKLEAR</span></h3>
       <p class="empresa">Sistema de Información de Vuelo por Internet.</p>
 
-      <p class="redes-sociales">
+      <!-- <p class="redes-sociales">
         <a href="#" class="facebook"><i class='bx bxl-facebook-square'></i></a>
         <a href="#" class="twitter"><i class='bx bxl-twitter'></i></a>
         <a href="#" class="instagram"><i class='bx bxl-instagram' ></i></a>
-      </p>
+      </p> -->
 
-      <span class="footer__nombre">&copy; Inc</span>
+      <!-- <span class="footer__nombre">&copy; Inc</span> -->
+      <img src="img/footer/LOGO_EPB.png" alt="footer__epb" class="footer__logo__epb">
       <p class="footer__empresa">2021 | IFIS NUKLEAR</p>
     </footer>
   </section>
